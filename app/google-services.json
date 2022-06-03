@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "142164595589",
+    "firebase_url": "https://ca-novascotia-isd-nspeeg.firebaseio.com",
+    "project_id": "ca-novascotia-isd-nspeeg",
+    "storage_bucket": "ca-novascotia-isd-nspeeg.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:142164595589:android:4b3b9cf6438f3f9f",
+        "android_client_info": {
+          "package_name": "com.ibm.emergencyapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "142164595589-u0n3ca4jott1vpj8bep9vk9c50mcmu4m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALUoCYCvaVqBwGyoY0bj_ce_CKEKX9Kng"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "142164595589-u0n3ca4jott1vpj8bep9vk9c50mcmu4m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:142164595589:android:7434c1807fe53b6a",
+        "android_client_info": {
+          "package_name": "com.ibm.mobilefirstplatform.clientsdk.android.push"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "142164595589-u0n3ca4jott1vpj8bep9vk9c50mcmu4m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALUoCYCvaVqBwGyoY0bj_ce_CKEKX9Kng"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "142164595589-u0n3ca4jott1vpj8bep9vk9c50mcmu4m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

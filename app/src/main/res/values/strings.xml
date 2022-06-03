@@ -1,0 +1,349 @@
+<resources>
+    <string name="app_name">Nova Scotia Provincial Employee Emergency Guide</string>
+    <!-- come from Bluemix Push Notification console: Manage > Configure > Mobile Options -->
+    <string name="appGUID">4a1c6648-9cc2-4703-af50-6fa503f84dec</string>
+    <string name="clientSecret">811d26d3-3678-46db-8ece-ca009208d7e4</string>
+
+    <string name="title_activity_notification">Notification</string>
+    <string name="main_enter_email_text">Enter your email and password</string>
+    <string name="main_gov_restriction_text">This application is intended for use by employees of the Province of Nova Scotia</string>
+    <string name="token_enter_token">Please check your email and enter the verification token provided.</string>
+    <string name="main_email_invalid">Please enter a Nova Scotia government email.</string>
+    <string name="tokenErrorText">Sorry the token you have entered is incorrect. Please try again.</string>
+    <!--<string name="sendGridApiKey">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</string>-->
+    <string name="sendGridApiKey">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</string>
+    <string name="emailVerifiedDateKey">EMAIL_VERIFIED_DATE</string>
+    <string name="revalidateText">You must re-validate your email address. Open the app to send the verification email.</string>
+    <string name="revalidateTitle">ServICE must be re-validated!</string>
+    <string name="notificationsTableName">notifications</string>
+    <string name="Health_Link">Health Link</string>
+    <string name="Poison_Control">Poison Control</string>
+    <string name="QEII_Health">QEII Health Service Care</string>
+    <string name="Police_Non_Emergency">Police Non-Emergency</string>
+    <string name="Mental_health">Mental Health Crisis Line</string>
+    <string name="Storm_Line">Storm Line</string>
+    <string name="NS_Power">Nova Scotia Power</string>
+    <string name="Health_Number">811</string>
+    <string name="Poison_Number">902.428.8161</string>
+    <string name="QEII_Number">902.473.2700</string>
+    <string name="Police_Number">902.490.5020</string>
+    <string name="MentalHealth_Number">1.888.429.8167</string>
+    <string name="StormLine_NumberGov"><b>Gov of NS</b> / 902.424.6045</string>
+    <string name="StormLine_Number">1.877.424.6045</string>
+    <string name="NSPower_Number1">1.800.428.6230</string>
+    <string name="NSPower_Number2">902.428.6230</string>
+    <string name="Emergency_Numbers_Page">Emergency Numbers</string>
+    <string name="UsingApp_WorkingAlone">Working Alone:</string>
+    <string name="UsingApp_suggestion">Problems, concerns or suggestions? Please contact corporate Security. </string>
+    <string name="UsingApp_Header">Using this App</string>
+    <string name="UsingApp_Paragraph">During  regular working hours  the Floor Emergency  Wardens  are available  to assist  you and direct the  response  to crisis  events.   Outside of regular  hours, at remote locations, and while  on the road, employees are reminded to have  a “working alone” plan.  Your supervisor  should  be aware of your work location and you should  be aware of supports  available  to you to respond  to unusual  events.</string>
+    <string name="SocialMedia_Header">Social Media</string>
+    <string name="SocialMedia_Gov">Gov of NS</string>
+    <string name="SocialMedia_HRM">HRM</string>
+    <string name="SocialMedia_GovSite">www.novascotia.ca/connect/</string>
+    <string name="SocialMedia_HRMSite">www.halifax.ca/home/social-media</string>
+    <string name="SocialMedia_Explain">These are trusted social media source for additional information. </string>
+    <string name="WeatherAndRoads_header">The Province of NS Storm line will be updated at 6 am each morning when severe weather is expected.</string>
+    <string name="WeatherAndRoads_Header">Weather and Roads</string>
+    <string name="WeatherAndRoads_WebSite">www.novascotia.ca</string>
+    <string name="Roads_TEXT1">1.Check road and weather conditions before travelling. Contact your supervisor for guidance before travelling.</string>
+    <string name="Roads_TEXT2">2.If you are at work, stay in the building until direction from your Manager or Floor Emergency Wardens.</string>
+    <string name="Roads_TEXT3">3.Once the storm has past, report injuries or damage to Floor Emergency wardens or first responders. Complete a departmental incident report. Notify your Manager of any issues immediately.</string>
+    <string name="Roads_TEXT4">4.When exiting the building, beware of downed power lines, broken glass, and unsafe areas.</string>
+    <string name="Storm_Guidance">Storm guidance and road conditions</string>
+    <string name="RoadsAndWeather_Phone">1.877.424.6045</string>
+    <string name="Security_Header">Security</string>
+    <string name="Security_firstBox">Non-emergencies-only!</string>
+    <string name="Security_text1">If this is an emergency contact 911</string>
+    <string name="Security_text2">If you were:</string>
+    <string name="Security_text3">1.Threatened</string>
+    <string name="Security_text4">2.Witnessed or were a victim of a crime or violence on government property</string>
+    <string name="Security_Text6">3.Want to report a suspicious activity or security issue</string>
+    <string name="Security_Text7">Alert your manager.</string>
+    <string name="Call_911_first">The 911 service is there to support you during traumatic events.</string>
+    <string name="Call_911_Header">When to Call 911</string>
+    <string name="Call_911_1">Call 911 immediately if you are:</string>
+    <string name="Call_911_2">injured or at immediate risk of being injured</string>
+    <string name="Call_911_3">There is an immediate threat to yourself or others</string>
+    <string name="Call_911_4">If you are concerned that an event could turn violent</string>
+    <string name="Call_911_5">Call for help, alert your supervisor,peers or Floor Wardens if available</string>
+    <string name="Call_911_6">Remove yourself from the threat if possible</string>
+    <string name="Call_911_7">Once the event is under control contact Security and your department safety office or Health and safety committee.</string>
+    <string name="Civil_Unrest_icon">Civil\nUnrest</string>
+    <string name="Civil_Unrest_title">Civil Unrest</string>
+    <string name="Civil_Unrest_1">If a Demonstration Occurs Outside the Building or in the Lobby</string>
+    <string name="Civil_Unrest_2">Do not, under any circumstances, involve yourself with the demonstrators either verbally or physically.</string>
+    <string name="Civil_Unrest_3">If the demonstrators prevent entry to your work location, withdraw and inform your supervisor.</string>
+    <string name="Civil_Unrest_4">Wait for further direction.</string>
+    <string name="Civil_Unrest_5">If the Building is Occupied</string>
+    <string name="Civil_Unrest_6">Immediately secure all sensitive documentation and equipment.</string>
+    <string name="Civil_Unrest_7">Do not say or do anything that will agitate the occupiers.</string>
+    <string name="Civil_Unrest_8">Do not attempt to physically restrain the occupiers.</string>
+    <string name="Civil_Unrest_9">Contact your Supervisor and Corporate Security.  Wait for further direction.</string>
+    <string name="Threat_Hazards_Header">Specific Threats and Hazards</string>
+    <string name="fire_label">Fire</string>
+    <string name="Power_loss_label">Power Loss</string>
+    <string name="Work_place_label">Workplace\nViolence</string>
+    <string name="work_place_label2">Violence</string>
+    <string name="medical_label">Medical</string>
+    <string name="Unusual_odours1">Unusual</string>
+    <string name="unusual_odours_2">Odours</string>
+    <string name="Vehicle_collision1">Vehicle\nCollision</string>
+    <string name="Vehicle_collision2">Collision</string>
+    <string name="bomb_label">Bomb or Suspicious\nPackage</string>
+    <string name="Civil_Unrest_Label">Civil\nUnrest</string>
+    <string name="WorkPlace_Violence_header">Workplace Violence</string>
+    <string name="Violence_1">Active Shooter/Violent Employee/Hostage Situations</string>
+    <string name="Violence_2">1. Do NOT trigger a fire alarm unless there is an actual fire.</string>
+    <string name="Violence_3">2. Remain calm and quiet.</string>
+    <string name="Violence_4">3. If possible call 911 or 9-911 (work phone)</string>
+    <string name="Violence_5">4. Notify those in your immediate vicinity.</string>
+    <string name="Violence_6">5. Set all cellphones/smartphones to silent (not vibrate).</string>
+    <string name="Violence_7">6. <font color='#000000'><b>Run</b></font> -Evacuate if possible, avoiding open areas and hallways.</string>
+    <string name="Violence_8">7. <font color='#000000'><b>Hide</b></font> -If you cannot evacuate, find a safe place, barricade the door</string>
+    <string name="Violence_9">8. <font color='#000000'><b>Fight</b></font> -If you are discovered, as a last resort you can Fight. Defend yourself with whatever makeshift weapon you can find in your workspace.</string>
+    <string name="title_activity_odours">Odours</string>
+    <string name="Odours_Header">Odours</string>
+    <string name="Odours_1">Unusual Odours</string>
+    <string name="Odours_2">1. Remain calm.  Notify your supervisor  and Building Maintenance of the situation, and allow them to investigate further.</string>
+    <string name="Odours_3">2. Outside of regular hours you are advised  to contact your supervisor. If you feel there is an immediate threat within the building, evacuate and call 911.</string>
+    <string name="Odours_4">3. Instructions  during normal hours will vary depending  on situation, they may include evacuation, shelter in place, or no action. You should be ready to respond.</string>
+    <string name="Odours_5">Chemical release</string>
+    <string name="Odours_6">1.Remain calm.</string>
+    <string name="Odours_7">2.Stay where you are and enact shelter  in place procedures.</string>
+    <string name="Odours_8">3.Remain in your building and monitor emails and phone  calls for further instructions.</string>
+    <string name="Odours_9">Sometimes odours may be a sign of significant hazard. I.e. natural gas.</string>
+    <string name="Header_Collision">Collision</string>
+    <string name="Collision1">If you are in a Collision</string>
+    <string name="Collision_2">Prevent further injury, conduct First Aid, Call 911.</string>
+    <string name="Collision_3">Exchange contact information with others involved.</string>
+    <string name="Collision_4">Contact your insurance company (have number in your phone)</string>
+    <string name="Power_Loss_Header">Power Loss</string>
+    <string name="Power_1">Power failure</string>
+    <string name="Power_2">1.  Set all light fixtures, equipment, and appliances switches to the OFF position to protect them when the power comes back on.</string>
+    <string name="Power_3">2. During normal hours remain in place and await instructions from your Manager, Floor Emergency Wardens or Security.</string>
+    <string name="Power_4">3. Outside of regular hours you are encouraged to evacuate the building immediately.  Emergency lighting will last only up to 30 min.</string>
+    <string name="Power_5">4. Do not attempt to use the elevator.Report all persons who may be trapped in elevators.</string>
+    <string name="Power_6">5. Alert your supervisor.</string>
+    <string name="Power_7">Elevator malfunction</string>
+    <string name="Power_8">1. Use emergency call button or phone inside the elevator, or a cell phone, to contact building maintenance and/or security.</string>
+    <string name="Power_9">2. Give your name and contact information, and specific location —building, elevator location or number, floor.</string>
+    <string name="Power_10">3. Wait for rescue. Be patient. Technician has to get to you, then take time to get you out.</string>
+    <string name="Power_11">4. Reassure others trapped with you, ask them to stay calm, and tell them what you have learned about the rescue plan.</string>
+    <string name="Header_Fire">Fire</string>
+    <string name="Fire_1">Instructions</string>
+    <string name="Fire_2">Remain Calm</string>
+    <string name="Fire_3">Shout   “Fire, Fire, Fire” to draw attention to the threat</string>
+    <string name="Fire_4">Activate the nearest pull station, usually by an exit door</string>
+    <string name="Fire_5">Only attempt  to fight the fire if you feel confident in your ability to extinguish it, you have the correct fire extinguisher,  and a clear exit path.</string>
+    <string name="Fire_6">Exit immediately  by the nearest unblocked  stairwell</string>
+    <string name="Fire_7">Call 911 when safe to do so</string>
+    <string name="Fire_8">Report to your assembly/muster  point and await further direction</string>
+    <string name="Fire_9">Do not re-enter  the building until given the  all clear by authorities</string>
+    <string name="Fire_10">When the  alarm sounds, exit the building immediately.  Some buildings may have a two stage alarm system.  Follow local directions form your Floor wardens.</string>
+    <string name="Fire_11">Assist those with mobility issues to seek an area of refuge near or in stairwells, assign a “buddy” and alert authorities  of the situation.  Do not attempt  to carry anyone down the stairs unless there is an immediate  threat to life.</string>
+    <string name="Bomb_Threat_Header">Bomb Threats/Suspicious Packages</string>
+    <string name="Bomb_Box_1">Bomb threats can be received in a variety of ways. Most bomb threats are made by persons who want to create an atmosphere of general anxiety or panic. All such threats must be taken seriously and handled as though a bomb is in the building.</string>
+    <string name="Bomb_1">Bomb Threat by phone</string>
+    <string name="Bomb_2">1. Remain Calm,   Listen to the caller, be calm and courteous. Do not interrupt the caller.Try to keep the caller on the line.</string>
+    <string name="Bomb_3">2. Without upsetting caller, try to obtain as much information as possible. Ask questions, such as “Where is the bomb?”, “When is it going to go off?”  “What kind is it?”, “What does it look like?”</string>
+    <string name="Bomb_4">3. Take notes on what is said and your observations about background noise, voice, language, etc.</string>
+    <string name="Bomb_5">4.  Notify someone in the office while the call is still ongoing. They should contact 911 or 9 –911.</string>
+    <string name="Bomb_6">5. Initiate call trace action (if available) while the call is ongoing (*57).</string>
+    <string name="Bomb_7">6. Follow any instructions given by your Supervisor, Security, or First Responders.</string>
+    <string name="Bomb_8">7. At the direction of 911, pull the fire alarm.</string>
+    <string name="Bomb_9">Suspicious Object or Package</string>
+    <string name="Bomb_10">If you find or receive a suspicious object, package, or mail:</string>
+    <string name="Bomb_11">1. Remain Calm.    Do not touch or move the object.</string>
+    <string name="Bomb_12">2. If you are holding  the object gently set it down on a solid surface or on the floor.</string>
+    <string name="Bomb_13">3. Do not cover it.Do not attempt  to disarm it.</string>
+    <string name="Bomb_14">4. Close doors to reduce air flow, and isolate the area.</string>
+    <string name="Bomb_15">5. Alert your supervisor and Security if available.</string>
+    <string name="Bomb_16">6. Alert others, leave the building.</string>
+    <string name="Bomb_17">7. Call 911 or 9-911 from government phones when safe to do so</string>
+    <string name="Bomb_18">8. If you come in contact  with package contents,</string>
+    <string name="Bomb_19">1. Remain where you are and close the doors.</string>
+    <string name="Bomb_20">2. Await further instructions  from First Responders.</string>
+    <string name="Bomb_21">Otherwise, leave the immediate area and remain out of the area until  told you can return.</string>
+    <string name="Medical_Header">Medical</string>
+    <string name="Medical_1">Sudden Collapse (Cardiac  Arrest)</string>
+    <string name="Medical_2">1. Call for help! Ask someone to notify the Floor Emergency Warden, get First Aid Kit and AED (Automated External Defibrillator) immediately.</string>
+    <string name="Medical_3">2.Complete a scene survey and make the area safe.</string>
+    <string name="Medical_4">3. Call 911 or 9-911, if someone else is nearby have them do it for you. Have caller follow dispatcher’s instructions.</string>
+    <string name="Medical_5">4. Assess Airway, Breathing, Circulation (ABCs) – immediately start CPR if necessary and utilize an AED</string>
+    <string name="Medical_6">5. If possible have someone meet the ambulance at the building address and bring them to you.</string>
+    <string name="Medical_7">6. Continue CPR until directed by First Responders (note -sometimes First Responders may wish assistance with patient care).</string>
+    <string name="Medical_8">7.Complete your departmental Incident Report and inform your manager.</string>
+    <string name="Medical_9">Serious Injury or Illness</string>
+    <string name="Medical_10">1. Remain calm and call out for help. Call or have someone call 911 or 9-911.</string>
+    <string name="Medical_11">2.Complete a scene survey and make the area safe.</string>
+    <string name="Medical_13">3. Stay with the injured or ill person and await emergency services.</string>
+    <string name="Medical_13_">4. Provide first aid for the injuries.</string>
+    <string name="Medical_14">"5. Do not attempt to move injured person, unless they are in imminent danger. "</string>
+    <string name="Medical_15">6. Do not transport in personal vehicle unless directed by paramedics.</string>
+    <string name="Medical_16">7 Stay with the injured person until First Responders arrive.</string>
+    <string name="Medical_17">8 Complete a departmental Incident Report and inform your Manager.</string>
+    <string name="Medical_18">Injury or Illness</string>
+    <string name="Medical_19">1. Remain calm. Ask for consent from the individual to provide first aid.</string>
+    <string name="Medical_20">2. Locate a Floor Emergency  Warden  or first aider.</string>
+    <string name="Medical_21">3. When in doubt, call 911 or 9-911.</string>
+    <string name="Medical_22">4. Provide first aid for the injuries.</string>
+    <string name="Medical_23">5. If medical attention is required but no ambulance necessary,  take the individual to the hospital or clinic by taxi. Or wait with them while a loved one picks them up. Do  NOT use personal vehicles.</string>
+    <string name="Medical_24">6. Do  not send injured person alone and insist that they do not drive themselves to seek treatment.</string>
+    <string name="Medical_25">7. Inform your Manager  and complete a departmental Incident  Report.</string>
+    <string name="Medical_26">Mental Health Issues</string>
+    <string name="Medical_27">Be aware of unusual behaviour. Advise your manager if you have concerns.</string>
+    <string name="Using_app">Using\nthis App</string>
+    <string name="Weather_and_roads_icon_header">Weather\nand Roads </string>
+    <string name="when_to_call">When to\ncall 911</string>
+    <string name="security">Security</string>
+    <string name="Social_media">Social Media</string>
+    <string name="Emergency_Num">Emergency\nNumbers</string>
+    <string name="Terms_And_Conditions">Terms and\nConditions</string>
+    <string name="Notification">Notification\nHistory</string>
+    <string name="Notification_title">Notification title</string>
+    <string name="Notification_description">Notification description</string>
+    <string name="Threat_Hazards">Specific Threat\nand Hazards</string>
+    <string name="Notification_History">Notification\nHistory</string>
+    <string name="notification_history2">Notification History</string>
+    <string name="mental_health">Mental\nHealth</string>
+    <string name="Mental_Health">Mental Health</string>
+    <string name="mental_health1">Crisis first aid for acute stress reaction.</string>
+    <string name="mental_health2">1) Let the person tell their story, if they want.</string>
+    <string name="mental_health3">2) Be empathetic.</string>
+    <string name="mental_health4">3) Validate normal responses to abnormal events.</string>
+    <string name="mental_health5">4) Encourage personal supports (where appropriate).</string>
+    <string name="mental_health6">5) Suggest they avoid alcohol or drugs.</string>
+    <string name="mental_health7">6) Encourage professional help when appropriate.</string>
+    <string name="collision_topText">If you have been involved in an accident please call Risk Management (24/7): </string>
+    <string name="LAE">LAE - Toll-Free</string>
+    <string name="LAE_Number">1.800.952.2687 (24 hours)</string>
+    <string name="Halifax_metro">Halifax Metro</string>
+    <string name="Metro_Number">902.424.5400</string>
+    <string name="threat_header1"><![CDATA[HOLD & SECURE]]></string>
+    <string name="threat_header2">Wait for further directions, remain in current location.</string>
+    <string name="threat_header3">Precautionary measures in response to a threat/incident in the general vicinity of your building.</string>
+    <!--<string name="threat_header5">general vicinity of your building.</string>-->
+    <string name="evacuate">Evacuate</string>
+    <string name="shelter">Take Shelter</string>
+    <string name="lockdown">Lockdown</string>
+    <string name="evacuate_description">When the threat is to the structure and/or could cause harm to those inside.</string>
+    <string name="shelter_description">When the threat is external and the structure is the safest place to be.</string>
+    <string name="lockdown_description">When the threat is to people, avoid the threat by any means. Run, Hide, Fight.</string>
+    <string name="unusual_odors_label">Unusual\nOdours</string>
+    <string name="collision">Vehicle Collision</string>
+    <string name="bomb_description">Bomb or Suspicious Package</string>
+    <string name="contact_manager">Contacting your manager:</string>
+    <string name="manger_body">In all events your manager must be notified as soon as possible. If your building has security personnel notify them as well.</string>
+    <string name="using_app_box3_1">Making important contacts accessible:</string>
+    <string name="Using_app_add">To add a quick link for a contact, go to the main screen of your android device and hold your finger down on empty space. When a screen pops up press widgets, then contacts. Click the option to add a direct Dial widget, drag the widget onto the screen and select the contact you want to create a direct dial for. Your direct dial widget is now set up.</string>
+    <string name="using_app_box3_text1">Your first point of contact for emergency events should be your manager, then building security if available.  We suggest having these numbers available on your phone. You can do this by:</string>
+    <string name="collision_text1">If you:</string>
+    <string name="collision_text2">\u2022 Have been involved in a collision while driving a fleet vehicle or a personal vehicle for work purposes</string>
+    <string name="collision_text3">\u2022 Are a witness to an incident involving crown property</string>
+    <string name="collision_text4">Please call:</string>
+    <string name="collision_text5">\u2022 Toll Free: 1.888.670.7767</string>
+    <string name="collision_text6">\u2022 After Hours: 902.599.2462</string>
+    <string name="collision_text7"><b>Non-emergencies only.</b> If you require immediate assistance call 911.</string>
+    <string name="Security_Contact">Contact Corporate Security 24/7 @ 902.478.9838 or 902.237.6173</string>
+    <string name="accept">I Accept</string>
+    <string name="decline">decline</string>
+    <string name="submit">Submit</string>
+    <string name="terms_conditions_title">Terms and Conditions</string>
+    <string name="close">close</string>
+    <string name="terms_conditions_FOIPOP_title">Province of Nova Scotia – Emergency Preparedness
+        Safety App (the “App”) Terms and Conditions of Use </string>
+    <string name="terms_conditions_FOIPOP">
+        The Province (hereinafter, “We”) realize that the Terms and Conditions of Use (the
+        “Agreement”) can be confusing, so, to the right of each term, we have provided a summary
+        in “plain English”. The summary does not in any way replace, modify or limit the full
+        text, so please ensure you read the full text as well.
+    </string>
+    <string name="terms_conditions_YA">Your Acceptance</string>
+    <string name="terms_conditions_PPI_title">Privacy of Personal Information</string>
+    <string name="terms_conditions_PPI">Thank you for choosing the Province’s Emergency Preparedness Safety App. This App is
+        provided to the Province’s employees for convenience, free of charge and its use is
+        completely voluntary. This App does not replace the existing 911 emergency system.<b><font color='red'> In the
+        event of an emergency, dial “911”.</font></b>
+        \n\n
+        By using or accessing the App, or clicking on the “I Agree” button below, you, as the
+        user of the App (hereinafter “You”) agree to these terms and conditions (the “Terms”),
+        all of which survive the termination of your right to use the App.
+    </string>
+    <string name="terms_conditions_PPI_part2"></string>
+
+    <string name="terms_conditions_DLL_title">Disclaimer and Limitation of Liability</string>
+    <string name="terms_conditions_RAP">
+        Except as expressly stated in this Agreement, We do not make any representation or warranty
+        (express or implied) in respect of the App, or related services offered by  or through the
+        App to You, including, without limitation, any implied warranty: (i) of merchantability;
+        (ii) of fitness for a particular purpose; (iii) arising from a course of performance,
+        course of dealing, or usage of trade; (iv) of non-infringement of third party rights; or
+        (v) against hidden defects. The App and the services are provided on an “as is”, “with all
+        faults” and “as available” basis and without any further warranties of any kind. We make no
+        warranty as to the quality or accuracy in respect of the App or the services offered by or
+        through the App.  We make no warranty that operation of the App or the service will be
+        uninterrupted or error free or that any defects will be corrected.
+        \n\n
+
+        Without limiting the above, you acknowledge that:
+        \n\n
+        &#8226; You are using the App and the services at your own risk;\n\n
+        &#8226; The App or the service is not a substitute for professional advice or the existing 911 system;\n\n
+        &#8226; You are solely responsible for the use of the App and service and agree that any training or learning on how to use the App or the service is your sole responsibility; which would typically require you to undertake additional and comprehensive gap analysis and risk assessments of the App and the service; and\n\n
+        &#8226; You have not relied on any representation in using the App or the service or any goods and services from us.\n\n
+
+        To the maximum extent permitted by law, we exclude completely all liability whatsoever for any
+        claims, liability, loss or damage of any kind however caused (including negligence) arising
+        out of or in connection with the services provided by us including the App and its access,
+        use or performance, including, without limitation, we are not liable for: (a) misuse of the
+        App or the services; (b) use of the App or the service with third party data, software or
+        hardware which is incompatible with the App or the service and/or not recommended by us;
+        (c) reduced performance or non-availability of the App or the service as a result of network
+        connections; (d) errors in the App or the service resulting from your configuration or
+        manipulation of the App or the service, in each case not specifically recommended in
+        writing by us; or (e) errors or reduced performance relating to any hardware used to access the App.
+        \n\n
+
+        Under no circumstances (including but not limited to any act or omission on our part)
+        will we be liable for any loss or damages (including, without limitation, indirect,
+        incidental, special or consequential or punitive damages and damages for loss of profits)
+        whatsoever which result from any use, or any inability to use, the App or the service.
+        \n\n
+
+        To the maximum extent permitted by law, our liability for breach of any implied warranty or
+        condition which cannot be excluded is limited at our option to supply of the good or service
+        ordered by You again or paying for their resupply.
+        \n\n
+
+        Notwithstanding the above, to the maximum extent permitted by law, in no event shall our
+        aggregate liability for any claims arising out of or related to these Terms exceed the
+        greater of fifty Canadian dollars ($50) or the amount that You paid, if any, to us for
+        access to or use of the App or service during the six months period immediately prior to
+        the event giving rise to such liability.
+    </string>
+
+    <string name="terms_conditions_popup_content">
+        Thank you for choosing the Province of Nova Scotia (the “Province”) Emergency Preparedness Safety App. This App is provided to the Province’s employees for convenience, free of charge and its use is completely voluntary.
+        \n\n
+
+        By using or accessing the App, or clicking on the “I Accept” button below, you agree to these terms and conditions:
+        \n\n
+
+        &#8226; The App or the service is not a substitute for professional advice or the existing 911 system\n\n
+        &#8226; Except as expressly stated in this Agreement, we do not make any representation or warranty (express or implied) in respect of the App\n\n
+        &#8226; You are using the App and the services at your own risk\n\n
+        &#8226; You are solely responsible for the use of the App and service\n\n
+        &#8226; All additional terms and conditions can be found in the Terms and Conditions page
+    </string>
+
+    <string name="ns_logo_description">NS logo</string>
+    <string name="PNS_launcher_logo">Launcher logo</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="warning_logo">warning</string>
+    <string name="threat_popup_icon">Threat and Hazard popup icon</string>
+    <string name="threat_popup_title">Threat and Hazard popup title</string>
+    <string name="threat_popup_description">Threat and Hazard popup description</string>
+    <string name="login">Login</string>
+
+</resources>

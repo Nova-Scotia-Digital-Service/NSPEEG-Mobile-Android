@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0069b9</color>
+    <color name="colorPrimaryDark">#004e89</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="buttonColor">#0069b9</color>
+    <color name="notificationBackground">#fff</color>
+    <color name="red">#ff0000</color>
+    <color name="white">#ffffff</color>
+    <color name="backgroundGrey">#e8e8e8</color>
+    <color name="buttnBorderColor">#000000</color>
+    <color name="blueText">#0f6bb6</color>
+    <color name="lightpurple">#6200EE</color>
+</resources>

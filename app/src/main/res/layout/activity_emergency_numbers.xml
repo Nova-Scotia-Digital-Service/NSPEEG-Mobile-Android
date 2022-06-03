@@ -1,0 +1,753 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmergencyNumbers">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/Header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/white"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:text="@string/Emergency_Numbers_Page"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </android.support.v7.widget.CardView>
+
+        <ScrollView
+            android:layout_below="@+id/Header"
+            android:layout_above="@id/footer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/backgroundGrey"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                tools:context=".EmergencyNumbers">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/LAE_Cardview"
+                    android:layout_width="340dp"
+                    android:layout_height="67dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@android:color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/NSPower_CardView">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:id="@+id/lae_tollfree_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="false"
+                            android:layout_centerHorizontal="false"
+                            android:layout_centerVertical="false"
+                            android:layout_gravity="start|center"
+                            android:layout_toLeftOf="@id/Lae_ImageView"
+                            android:layout_toStartOf="@id/Lae_ImageView"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@color/white"
+                            android:text="@string/LAE"
+                            android:textColor="@color/blueText"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/lae_tollfree_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/lae_tollfree_text"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
+                            android:background="@color/white"
+                            android:text="@string/LAE_Number"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/Lae_ImageView"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="end|center"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:background="@android:color/transparent"
+                            android:contentDescription="@string/LAE"
+                            app:srcCompat="@drawable/phonemdpi" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/Police_CardView"
+                    android:layout_width="340dp"
+                    android:layout_height="67dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@android:color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/QEII_CardView">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:id="@+id/police_non_emergency_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="false"
+                            android:layout_centerHorizontal="false"
+                            android:layout_centerVertical="false"
+                            android:layout_gravity="start|center"
+                            android:layout_toLeftOf="@id/police_ImageView"
+                            android:layout_toStartOf="@id/police_ImageView"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@color/white"
+                            android:text="@string/Police_Non_Emergency"
+                            android:textColor="@color/blueText"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/police_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/police_non_emergency_text"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
+                            android:background="@color/white"
+                            android:text="@string/Police_Number"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/police_ImageView"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="end|center"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:background="@android:color/transparent"
+                            android:contentDescription="@string/Police_Non_Emergency"
+                            app:srcCompat="@drawable/phonemdpi" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/Halifax_Metro_CardView"
+                    android:layout_width="340dp"
+                    android:layout_height="67dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@android:color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/LAE_Cardview">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:id="@+id/halifax_metro_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="false"
+                            android:layout_centerHorizontal="false"
+                            android:layout_centerVertical="false"
+                            android:layout_gravity="start|center"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_toStartOf="@id/metro_imageview"
+                            android:layout_toLeftOf="@id/metro_imageview"
+                            android:background="@color/white"
+                            android:text="@string/Halifax_metro"
+                            android:textColor="@color/blueText"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/halifax_metro_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/halifax_metro_text"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@color/white"
+                            android:text="@string/Metro_Number"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/metro_imageview"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="end|center"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:background="@android:color/transparent"
+                            android:contentDescription="@string/Halifax_metro"
+                            app:srcCompat="@drawable/phonemdpi" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/QEII_CardView"
+                    android:layout_width="340dp"
+                    android:layout_height="67dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@android:color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/PoisionControl_CardView">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:id="@+id/QEII_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="false"
+                            android:layout_centerHorizontal="false"
+                            android:layout_centerVertical="false"
+                            android:layout_gravity="start|center"
+                            android:layout_toLeftOf="@id/QEII_ImageView"
+                            android:layout_toStartOf="@id/QEII_ImageView"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@color/white"
+                            android:text="@string/QEII_Health"
+                            android:textColor="@color/blueText"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/QEII_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/QEII_text"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
+                            android:background="@color/white"
+                            android:text="@string/QEII_Number"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/QEII_ImageView"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="end|center"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:background="@android:color/transparent"
+                            android:contentDescription="@string/QEII_Health"
+                            app:srcCompat="@drawable/phonemdpi" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/StormLine_CardView"
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@android:color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/MentalHealth_CardView">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white">
+
+                        <ImageView
+                            android:id="@+id/stormLine_ImageView2"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignStart="@+id/StormLine_ImageView"
+                            android:layout_alignLeft="@+id/StormLine_ImageView"
+                            android:layout_alignBottom="@+id/StormLine_extra"
+                            android:layout_gravity="end|center"
+                            android:background="@android:color/transparent"
+                            android:contentDescription="@string/Storm_Line"
+                            app:srcCompat="@drawable/phonemdpi" />
+
+                        <TextView
+                            android:id="@+id/StormLine_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="false"
+                            android:layout_centerHorizontal="false"
+                            android:layout_centerVertical="false"
+                            android:layout_gravity="start|center"
+                            android:layout_toLeftOf="@id/StormLine_ImageView"
+                            android:layout_toStartOf="@id/StormLine_ImageView"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/white"
+                            android:text="@string/Storm_Line"
+                            android:textColor="@color/blueText"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/StormLine_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/StormLine_text"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/white"
+                            android:text="@string/StormLine_NumberGov"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/StormLine_ImageView"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="end|center"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:background="@android:color/transparent"
+                            android:contentDescription="@string/Storm_Line"
+                            app:srcCompat="@drawable/phonemdpi" />
+
+                        <TextView
+                            android:id="@+id/StormLine_extra"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/StormLine_phone"
+                            android:layout_alignStart="@+id/StormLine_text"
+                            android:layout_alignLeft="@+id/StormLine_text"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@android:color/white"
+                            android:text="@string/StormLine_Number"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/MentalHealth_CardView"
+                    android:layout_width="340dp"
+                    android:layout_height="67dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@android:color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Police_CardView">
+
+                    <ImageView
+                        android:id="@+id/MentalHelath_ImageView"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="end|center"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@android:color/transparent"
+                        app:srcCompat="@drawable/phonemdpi"
+                        android:contentDescription="@string/mental_health"/>
+
+                    <ImageView
+                        android:id="@+id/police_ImageView2"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="end|center"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="@string/Mental_health"
+                        app:srcCompat="@drawable/phonemdpi" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent">
+
+                        <TextView
+                            android:id="@+id/MentalHelath_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="false"
+                            android:layout_centerHorizontal="false"
+                            android:layout_centerVertical="false"
+                            android:layout_gravity="start|center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@color/white"
+                            android:text="@string/Mental_health"
+                            android:textColor="@color/blueText"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/MentalHelath_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/MentalHelath_text"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
+                            android:background="@color/white"
+                            android:text="@string/MentalHealth_Number"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/PoisionControl_CardView"
+                    android:layout_width="340dp"
+                    android:layout_height="67dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@android:color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/HealthLink_CardView">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:id="@+id/PoisonControl_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="false"
+                            android:layout_centerHorizontal="false"
+                            android:layout_centerVertical="false"
+                            android:layout_gravity="start|center"
+                            android:layout_toLeftOf="@id/PoisonControl_ImageView"
+                            android:layout_toStartOf="@id/PoisonControl_ImageView"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@color/white"
+                            android:text="@string/Poison_Control"
+                            android:textColor="@color/blueText"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/PoisionControl_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/PoisonControl_text"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
+                            android:background="@color/white"
+                            android:text="@string/Poison_Number"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/PoisonControl_ImageView"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="end|center"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:background="@android:color/transparent"
+                            android:contentDescription="@string/Poison_Control"
+                            app:srcCompat="@drawable/phonemdpi" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/NSPower_CardView"
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@android:color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/StormLine_CardView">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white">
+
+                        <ImageView
+                            android:id="@+id/NSPower_ImageView2"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignStart="@+id/NSPower_ImageView"
+                            android:layout_alignLeft="@+id/NSPower_ImageView"
+                            android:layout_alignBottom="@+id/NSPower_Extra"
+                            android:layout_gravity="end|center"
+                            android:background="@android:color/transparent"
+                            android:contentDescription="@string/NS_Power"
+                            app:srcCompat="@drawable/phonemdpi" />
+
+                        <TextView
+                            android:id="@+id/NSPower_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="false"
+                            android:layout_centerHorizontal="false"
+                            android:layout_centerVertical="false"
+                            android:layout_gravity="start|center"
+                            android:layout_toLeftOf="@id/NSPower_ImageView"
+                            android:layout_toStartOf="@id/NSPower_ImageView"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/white"
+                            android:text="@string/NS_Power"
+                            android:textColor="@color/blueText"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/NSPower_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/NSPower_text"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/white"
+                            android:text="@string/NSPower_Number1"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/NSPower_ImageView"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginBottom="5dp"
+                            android:layout_gravity="end|center"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:background="@android:color/transparent"
+                            android:contentDescription="@string/NS_Power"
+                            app:srcCompat="@drawable/phonemdpi" />
+
+                        <TextView
+                            android:id="@+id/NSPower_Extra"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/NSPower_phone"
+                            android:layout_alignStart="@+id/NSPower_text"
+                            android:layout_alignLeft="@+id/NSPower_text"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@android:color/white"
+                            android:text="@string/NSPower_Number2"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/HealthLink_CardView"
+                    android:layout_width="340dp"
+                    android:layout_height="67dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@android:color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/HealthLink_ImageView"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="end|center"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@android:color/transparent"
+                        app:srcCompat="@drawable/phonemdpi"
+                        android:contentDescription="@string/Health_Link"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="@string/Health_Link">
+
+                        <TextView
+                            android:id="@+id/HealthLink_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="false"
+                            android:layout_centerHorizontal="false"
+                            android:layout_centerVertical="false"
+                            android:layout_gravity="start|center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@color/white"
+                            android:text="@string/Health_Link"
+                            android:textColor="@color/blueText"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/HealthLink_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/HealthLink_text"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@color/white"
+                            android:text="@string/Health_Number"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+
+            </android.support.constraint.ConstraintLayout>
+</ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/backgroundGrey"
+        android:gravity="center">
+
+        <SeekBar
+            android:id="@+id/slide_seekbar"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/swipe911"
+            android:progressDrawable="@android:color/transparent" />
+    </RelativeLayout>
+</RelativeLayout>

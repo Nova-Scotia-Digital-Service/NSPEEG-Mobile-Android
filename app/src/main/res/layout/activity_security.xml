@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecurityActivity">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/Header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/white"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:text="@string/Security_Header"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </android.support.v7.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/footer"
+        android:layout_below="@+id/Header"
+        android:background="@color/backgroundGrey">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/backgroundGrey"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            tools:context=".UsingTheApp">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/UsingAppFirst_CardView"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:background="@android:color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/QEII_CardView">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/storm_guidance_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="false"
+                        android:layout_centerHorizontal="false"
+                        android:layout_centerVertical="false"
+                        android:layout_gravity="start|center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@color/white"
+                        android:text="@string/Security_text1"
+                        android:textColor="@color/blueText"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/storm_guidance_title"
+                        android:layout_alignStart="@+id/storm_guidance_title"
+                        android:layout_alignLeft="@+id/storm_guidance_title"
+                        android:layout_marginTop="10dp"
+                        android:background="@android:color/white"
+                        android:text="@string/Security_text2"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/storm_guidance_title"
+                        android:layout_alignLeft="@+id/storm_guidance_title"
+                        android:layout_below="@+id/textView5"
+                        android:layout_marginTop="10dp"
+                        android:background="@android:color/white"
+                        android:text="@string/Security_text3" />
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/storm_guidance_title"
+                        android:layout_alignLeft="@+id/storm_guidance_title"
+                        android:layout_below="@+id/textView6"
+                        android:layout_marginTop="10dp"
+                        android:background="@android:color/white"
+                        android:text="@string/Security_text4" />
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/storm_guidance_title"
+                        android:layout_alignLeft="@+id/storm_guidance_title"
+                        android:layout_below="@+id/textView7"
+                        android:layout_marginTop="10dp"
+                        android:background="@android:color/white"
+                        android:text="@string/Security_Text6" />
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView8"
+                        android:layout_alignStart="@+id/storm_guidance_title"
+                        android:layout_alignLeft="@+id/storm_guidance_title"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="12dp"
+                        android:background="@android:color/white"
+                        android:text="@string/Security_Text7" />
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/textView2"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_below="@+id/textView10"-->
+                        <!--android:layout_margin="10dp"-->
+                        <!--android:layout_marginEnd="46dp"-->
+                        <!--android:text="@string/Security_Contact" />-->
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/QEII_CardView"
+                android:layout_width="340dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:background="@android:color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/When_In_doubt_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="start|center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:background="@color/white"
+                        android:text="@string/Security_firstBox"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/backgroundGrey"
+        android:gravity="center">
+
+        <SeekBar
+            android:id="@+id/slide_seekbar"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/swipe911"
+            android:progressDrawable="@android:color/transparent" />
+    </RelativeLayout>
+</RelativeLayout>

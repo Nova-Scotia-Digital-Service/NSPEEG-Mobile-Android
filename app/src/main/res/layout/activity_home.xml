@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/backgroundGrey">
+
+    <LinearLayout
+        android:id="@+id/activity_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/bottom_white"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/homeImageLogo"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginBottom="@dimen/margin"
+            android:layout_marginTop="@dimen/margin_small"
+            android:background="@android:color/white"
+            app:srcCompat="@drawable/pns_logo"
+            android:contentDescription="@string/ns_logo_description"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/footer"
+        android:layout_below="@+id/activity_home"
+        android:background="@color/backgroundGrey">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:background="@color/backgroundGrey"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+                <ImageView
+                    android:id="@+id/button4_Home"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_below="@+id/button8_Home"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@color/backgroundGrey"
+                    android:contentDescription="@string/when_to_call"
+                    android:onClick="whenToCall911"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.32"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.096"
+                    app:srcCompat="@drawable/whentocall_smallldpi" />
+
+                <ImageView
+                    android:id="@+id/button8_Home"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@null"
+                    android:contentDescription="@string/Emergency_Num"
+                    android:onClick="emergencyNumbers"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.53999996"
+                    app:srcCompat="@drawable/emergencynumbers_largeldpi" />
+
+                <ImageView
+                    android:id="@+id/button7_Home"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_alignTop="@+id/button8_Home"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="230dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@null"
+                    android:contentDescription="@string/Weather_and_roads_icon_header"
+                    android:onClick="roadsAndWeather"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.72"
+                    app:srcCompat="@drawable/weather_smallmdpi" />
+
+                <ImageView
+                    android:id="@+id/button1_Home"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="230dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_toStartOf="@+id/button5_Home"
+                    android:layout_toLeftOf="@+id/button5_Home"
+                    android:background="@null"
+                    android:contentDescription="@string/Notification_History"
+                    android:onClick="history"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.83"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.16000003"
+                    app:srcCompat="@drawable/notification_smallldpi" />
+
+                <ImageView
+                    android:id="@+id/button2_Home"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_alignTop="@+id/button1_Home"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="230dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_toEndOf="@+id/button5_Home"
+                    android:layout_toRightOf="@+id/button5_Home"
+                    android:background="@null"
+                    android:contentDescription="@string/Threat_Hazards_Header"
+                    android:onClick="hazards"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.17"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.14999998"
+                    app:srcCompat="@drawable/ic_threats_small" />
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/button9_Home"-->
+                    <!--android:layout_width="70dp"-->
+                    <!--android:layout_height="70dp"-->
+                    <!--android:layout_alignTop="@+id/button1_Home"-->
+                    <!--android:layout_marginStart="8dp"-->
+                    <!--android:layout_marginLeft="8dp"-->
+                    <!--android:layout_marginTop="230dp"-->
+                    <!--android:layout_marginEnd="8dp"-->
+                    <!--android:layout_marginRight="8dp"-->
+                    <!--android:layout_marginBottom="8dp"-->
+                    <!--android:layout_toEndOf="@+id/button5_Home"-->
+                    <!--android:layout_toRightOf="@+id/button5_Home"-->
+                    <!--android:background="@color/backgroundGrey"-->
+                    <!--android:contentDescription="@string/Terms_And_Conditions"-->
+                    <!--android:onClick="termsConditions"-->
+                    <!--android:text="@string/Terms_And_Conditions"-->
+                    <!--app:layout_constraintBottom_toBottomOf="parent"-->
+                    <!--app:layout_constraintEnd_toEndOf="parent"-->
+                    <!--app:layout_constraintHorizontal_bias="0.93"-->
+                    <!--app:layout_constraintStart_toStartOf="parent"-->
+                    <!--app:layout_constraintTop_toTopOf="parent"-->
+                    <!--app:layout_constraintVertical_bias="0.0"-->
+                    <!--app:srcCompat="@drawable/ic_tersm_small" />-->
+
+                <ImageView
+                    android:id="@+id/button6_Home"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_below="@+id/button8_Home"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@null"
+                    android:contentDescription="@string/Using_app"
+                    android:onClick="usingApp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.68"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.097"
+                    app:srcCompat="@drawable/ic_howto_small" />
+
+                <ImageView
+                    android:id="@+id/button3_Home"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_alignTop="@+id/button8_Home"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="130dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@null"
+                    android:contentDescription="@string/security"
+                    android:onClick="security"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.89"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.060000002"
+                    app:srcCompat="@drawable/security_smallldpi" />
+
+                <ImageView
+                    android:id="@+id/button5_Home"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="130dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@null"
+                    android:contentDescription="@string/Social_media"
+                    android:onClick="media"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.11"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.060000002"
+                    app:srcCompat="@drawable/ic_social_small" />
+
+                <!--<TextView-->
+                    <!--android:id="@+id/textView8_Home"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_marginTop="50dp"-->
+                    <!--android:background="@android:color/transparent"-->
+                    <!--android:gravity="center_horizontal"-->
+                    <!--android:text="@string/Notification"-->
+                    <!--android:textSize="10sp"-->
+                    <!--android:visibility="gone"-->
+                    <!--app:layout_constraintBottom_toBottomOf="@+id/button8_Home"-->
+                    <!--app:layout_constraintEnd_toEndOf="parent"-->
+                    <!--app:layout_constraintStart_toStartOf="parent"-->
+                    <!--app:layout_constraintTop_toTopOf="@+id/button8_Home" />-->
+
+                <TextView
+                    android:id="@+id/textView2_Home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/button8_Home"
+                    android:layout_alignStart="@id/button1_Home"
+                    android:layout_alignLeft="@id/button1_Home"
+                    android:layout_alignEnd="@+id/button1_Home"
+                    android:layout_alignRight="@id/button1_Home"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@null"
+                    android:gravity="center_horizontal"
+                    android:text="@string/Threat_Hazards"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/button2_Home"
+                    app:layout_constraintStart_toStartOf="@+id/button2_Home"
+                    app:layout_constraintTop_toBottomOf="@+id/button2_Home" />
+
+                <!--<TextView-->
+                    <!--android:id="@+id/textView9_Home"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_above="@+id/button8_Home"-->
+                    <!--android:layout_alignStart="@id/button1_Home"-->
+                    <!--android:layout_alignLeft="@id/button1_Home"-->
+                    <!--android:layout_alignEnd="@+id/button1_Home"-->
+                    <!--android:layout_alignRight="@id/button1_Home"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:background="@color/backgroundGrey"-->
+                    <!--android:gravity="center_horizontal"-->
+                    <!--android:text="@string/Terms_And_Conditions"-->
+                    <!--android:textSize="12sp"-->
+                    <!--android:textStyle="bold"-->
+                    <!--app:layout_constraintEnd_toEndOf="@+id/button9_Home"-->
+                    <!--app:layout_constraintStart_toStartOf="@+id/button9_Home"-->
+                    <!--app:layout_constraintTop_toBottomOf="@+id/button9_Home" />-->
+
+                <TextView
+                    android:id="@+id/textView3_Home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/button8_Home"
+                    android:layout_alignStart="@+id/button2_Home"
+                    android:layout_alignLeft="@+id/button2_Home"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@color/backgroundGrey"
+                    android:gravity="center_horizontal"
+                    android:text="@string/security"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/button3_Home"
+                    app:layout_constraintStart_toStartOf="@+id/button3_Home"
+                    app:layout_constraintTop_toBottomOf="@+id/button3_Home" />
+
+                <TextView
+                    android:id="@+id/textView5_Home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/button7_Home"
+                    android:layout_alignStart="@+id/button7_Home"
+                    android:layout_alignLeft="@+id/button7_Home"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="@string/Social_media"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/button5_Home"
+                    app:layout_constraintStart_toStartOf="@+id/button5_Home"
+                    app:layout_constraintTop_toBottomOf="@+id/button5_Home" />
+
+                <TextView
+                    android:id="@+id/textView1_Home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/button4_Home"
+                    android:layout_alignStart="@+id/button6_Home"
+                    android:layout_alignLeft="@+id/button6_Home"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@color/backgroundGrey"
+                    android:gravity="center_horizontal"
+                    android:text="@string/Notification_History"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/button1_Home"
+                    app:layout_constraintStart_toStartOf="@+id/button1_Home"
+                    app:layout_constraintTop_toBottomOf="@+id/button1_Home" />
+
+                <TextView
+                    android:id="@+id/textView4_Home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/button7_Home"
+                    android:layout_alignStart="@+id/button3_Home"
+                    android:layout_alignLeft="@+id/button3_Home"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@null"
+                    android:gravity="center_horizontal"
+                    android:text="@string/when_to_call"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/button4_Home"
+                    app:layout_constraintStart_toStartOf="@+id/button4_Home"
+                    app:layout_constraintTop_toBottomOf="@+id/button4_Home" />
+
+                <TextView
+                    android:id="@+id/textView7_Home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/button4_Home"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@color/backgroundGrey"
+                    android:gravity="center_horizontal"
+                    android:text="@string/Weather_and_roads_icon_header"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/button7_Home"
+                    app:layout_constraintHorizontal_bias="0.533"
+                    app:layout_constraintStart_toStartOf="@+id/button7_Home"
+                    app:layout_constraintTop_toBottomOf="@+id/button7_Home"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/textView6_Home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/button5_Home"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@null"
+                    android:gravity="center_horizontal"
+                    android:text="@string/Using_app"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/button6_Home"
+                    app:layout_constraintStart_toStartOf="@+id/button6_Home"
+                    app:layout_constraintTop_toBottomOf="@+id/button6_Home" />
+            </android.support.constraint.ConstraintLayout>
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/backgroundGrey"
+        android:gravity="center">
+
+        <SeekBar
+            android:id="@+id/slide_seekbar"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/swipe911"
+            android:progressDrawable="@android:color/transparent" />
+    </RelativeLayout>
+
+</RelativeLayout>

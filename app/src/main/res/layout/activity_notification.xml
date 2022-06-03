@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/backgroundGrey"
+    android:padding="@dimen/layout_padding"
+    tools:context="com.ibm.emergencyapp.NotificationActivity">
+
+
+    <ImageView
+        android:id="@+id/notification_activity_icon"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:background="@color/backgroundGrey"
+        android:scaleType="centerInside"
+        android:src="@drawable/warning_icon"
+        android:contentDescription="@string/Notification"/>
+
+    <TextView
+        android:id="@+id/notification_activity_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="?android:attr/listPreferredItemPaddingLeft"
+        android:layout_marginStart="?android:attr/listPreferredItemPaddingLeft"
+        android:layout_toRightOf="@+id/notification_activity_icon"
+        android:layout_toEndOf="@+id/notification_activity_icon"
+        android:background="@color/backgroundGrey"
+        android:text="@string/Notification_title"
+        android:textAppearance="@android:style/TextAppearance.Holo.Large"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/notification_activity_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/notification_activity_icon"
+        android:layout_marginTop="@dimen/margin"
+        android:background="@color/backgroundGrey"
+        android:textAppearance="@android:style/TextAppearance.Holo.Medium"
+        tools:text="This is notification body.\n1.abcd\n2.defg"/>
+
+    <Button
+        android:id="@+id/notification_activity_button_dismiss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_button_blue"
+        android:onClick="dismiss"
+        android:text="@string/dismiss"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

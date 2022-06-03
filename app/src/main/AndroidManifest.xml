@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ibm.emergencyapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="com.ibm.emergencyapp.IBMPushNotification" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.ibm.emergencyapp.IBMPushNotification" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ibm.mobilefirstplatform.clientsdk.android.push.api.MFPPushNotificationHandler"
+            android:theme="@android:style/Theme.NoDisplay" />
+
+        <service
+            android:name="com.ibm.mobilefirstplatform.clientsdk.android.push.api.MFPPushIntentService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.ibm.mobilefirstplatform.clientsdk.android.push.api.MFPPush"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".NotificationActivity"
+            android:label="@string/title_activity_notification">
+        </activity>
+        <activity
+            android:name=".TokenActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".util.NotificationService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.ibm.emergencyapp.util.NotificationService" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".EmergencyNumbers" />
+        <activity android:name=".UsingTheApp" />
+        <activity android:name=".SocialMedia" />
+        <activity android:name=".WeatherAndRoads" />
+        <activity android:name=".SecurityActivity" />
+        <activity android:name=".WhenToCall911" />
+        <activity android:name=".CivilUnrest" />
+        <activity android:name=".ThreatHazards" />
+        <activity android:name=".WorkplaceViolence" />
+        <activity android:name=".Odours" />
+        <activity android:name=".Collision" />
+        <activity android:name=".PowerLoss" />
+        <activity android:name=".Fire" />
+        <activity android:name=".BombThreats" />
+        <activity android:name=".Medical" />
+        <activity android:name=".NotificationHistory" />
+        <activity android:name=".MentalHealth"/>
+        <activity android:name=".TermConditions"/>
+
+        <!--TODO change scheme according to metadata-->
+        <activity
+            android:name="net.openid.appauth.RedirectUriReceiverActivity"
+            tools:node="replace">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="servicenovascotiaauth"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
